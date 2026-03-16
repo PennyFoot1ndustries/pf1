@@ -37,29 +37,57 @@ body {
   
 <body>
     <div id="header"></div> 
-<main>
-<!-- MUSIC PLAYER-->
+  <style>
+body{background:#111;color:white;font-family:sans-serif;text-align:center;margin-top:80px}
+.player{width:320px;margin:auto}
+img{width:100%;border-radius:10px}
+button{margin:6px;padding:8px 14px}
+</style>
 
-<div class="simple-audio-player" id="simp" data-config='{"shide_top":false,"shide_btm":false,"auto_load":false}'>
-<div class="simp-playlist">
-<ul>  
-<li><span class="simp-source" data-src=
+<body>
 
-"MUSIC/Long Pause.mp3"><img src="PNGs/Long Pause.png" alt="Long Pause" style="width:400px;height:200px;"></li><li><span class="simp-source" data-src=
+<div class="player">
+<img id="art">
+<h2 id="title"></h2>
+<p id="artist"></p>
 
-"MUSIC/4-27 Cloud Sound.mp3"><img src="PNGs/.png" alt="Cloud Sound" style="width:200px;height:100px;"></li><li><span class="simp-source" data-src=
-"MUSIC/YU3.m4a"><img src="PNGs/.png" alt="YU3" style="width:200px;height:100px;"></li><li><span class="simp-source" data-src=
-"MUSIC/01 Giddyup.mp3"><img src="PNGs/Giddyup.png" alt="Giddyup" style="width:200px;height:100px;"></li><li><span class="simp-source" data-src=
-"MUSIC/02 social security number.mp3"><img src="PNGs/Social Security Number.png" alt="Social Security Number" style="width:200px;height:100px;"></li><li><span class="simp-source" data-src=
-"MUSIC/01 this microphone alone.mp3"><img src="PNGs/This Microphone Alone.png" alt="This Microphone Alone" style="width:200px;height:100px;"></li><li><span class="simp-source" data-src=
+<audio id="audio"></audio>
 
-</ul>
+<button onclick="prev()">◀</button>
+<button onclick="play()">▶</button>
+<button onclick="next()">▶▶</button>
+<button onclick="shuffle()">🔀</button>
 </div>
- </main> 
-  <br>
 
-<!-- Audio Player JS -->
-<script  src="./js/script.js"></script>
+<script>
+
+let tracks=[]
+let i=0
+const audio=document.getElementById("audio")
+
+fetch("music/tracks.json")
+.then(r=>r.json())
+.then(data=>{
+tracks=data
+load(0)
+})
+
+function load(n){
+i=n
+audio.src=tracks[i].src
+title.textContent=tracks[i].title
+artist.textContent=tracks[i].artist
+art.src=tracks[i].art
+}
+
+function play(){audio.paused?audio.play():audio.pause()}
+function next(){load((i+1)%tracks.length);audio.play()}
+function prev(){load((i-1+tracks.length)%tracks.length);audio.play()}
+function shuffle(){load(Math.floor(Math.random()*tracks.length));audio.play()}
+
+audio.onended=shuffle
+
+</script>
 <div id="footer"></div>
 </body>
 </html>
