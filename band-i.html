@@ -1,59 +1,61 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Saison Xiang" content="navBanq">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+     <link href="https://fonts.cdnfonts.com/css/glance-slab-test" rel="stylesheet">
+ <script async src="https://www.googletagmanager.com/gtag/js?id=G-69P721FCCG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-69P721FCCG');
+</script>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script> 
+<script>  
+$(function(){ 
+  $("#header").load("header.html");  
+  $("#footer").load("footer.html");  
+}); 
+</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body{background:#111;color:white;font-family:sans-serif;text-align:center;margin-top:80px}
-.player{width:320px;margin:auto}
-img{width:100%;border-radius:10px}
-button{margin:6px;padding:8px 14px}
+body { 
+      padding: 22px;
+  background-color: white;
+  color: black;
+  font-size: 22px;
+  font-family: 'Glance Slab Test', sans-serif;
+}                                          
 </style>
 </head>
-
+  
 <body>
+    <div id="header"></div> 
+<main>
+<!-- MUSIC PLAYER-->
 
-<div class="player">
-<img id="art">
-<h2 id="title"></h2>
-<p id="artist"></p>
-
-
-  <audio controls src="MUSIC/YU3.m4a"></audio>
-
-<button onclick="prev()">◀</button>
-<button onclick="play()">▶</button>
-<button onclick="next()">▶▶</button>
-<button onclick="shuffle()">🔀</button>
+<div class="simple-audio-player" id="simp" data-config='{"shide_top":false,"shide_btm":false,"auto_load":false}'>
+<div class="simp-playlist">
+<ul>  
+<li><span class="simp-source" data-src=
+"MUSIC/YU3.m4a"><img src="ART/YU3.png" alt="YU3" style="width:200px;height:100px;"></li><li><span class="simp-source" data-src=
+"MUSIC/DIPU.mp3"><img src="ART/TOM.png" alt="TOM" style="width:50px;height:100px;"></li><li><span class="simp-source" data-src=
+"MUSIC/JAG.m4a"><img src="ART/TEXAS.png" alt="TEXAS" style="width:200px;height:100px;"></li><li><span class="simp-source" data-src=
+"MUSIC/MARU.m4a"><img src="ART/OPNG.png" alt="OPNG" style="width:200px;height:200px;"></li><li><span class="simp-source" data-src=
+"MUSIC/TUAC.mp3"><img src="ART/IONPENNY.png" alt="IONPENNY" style="width:200px;height:100px;"></li><li><span class="simp-source" data-src=                                                                                   
+"MUSIC/YEW.m4a"><img src="ART/DAT.png" alt="DAT" style="width:200px;height:100px;"></li><li><span class="simp-source" data-src=
+</ul>
 </div>
+ </main> 
+  <br>
 
-<script>
-
-let tracks=[]
-let i=0
-const audio=document.getElementById("audio")
-
-fetch("MUSIC/tracks.json")
-.then(r=>r.json())
-.then(data=>{
-tracks=data
-load(0)
-})
-
-function load(n){
-i=n
-audio.src=tracks[i].src
-title.textContent=tracks[i].title
-artist.textContent=tracks[i].artist
-art.src=tracks[i].art
-}
-
-function play(){audio.paused?audio.play():audio.pause()}
-function next(){load((i+1)%tracks.length);audio.play()}
-function prev(){load((i-1+tracks.length)%tracks.length);audio.play()}
-function shuffle(){load(Math.floor(Math.random()*tracks.length));audio.play()}
-
-audio.onended=shuffle
-
-</script>
+<!-- Audio Player JS -->
+<script  src="./js/script.js"></script>
+<div id="footer"></div>
 </body>
 </html>
