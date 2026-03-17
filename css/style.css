@@ -69,14 +69,14 @@ a,a:hover,a:visited{color:#ddd;text-decoration:none;}
 }
 
 @font-face {
-  font-family: 'GLANCESLAB';
+  font-family: 'GlaceSlab';
   src: url('./FONTS/GlanceSlabTest-Black.otf') format('opentype');
   font-weight:900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-    font-family: 'GLANCESLAB';
+    font-family: 'GlaceSlab';
       src: url('./FONTS/GlanceSlabTest-Bold.otf') format('opentype');
     font-weight: 700;
     font-style: normal;
@@ -84,7 +84,7 @@ a,a:hover,a:visited{color:#ddd;text-decoration:none;}
 }
 
 @font-face {
-    font-family: 'GLANCESLAB';
+    font-family: 'GlaceSlab';
       src: url('./FONTS/GlanceSlabTest-Book.otf') format('opentype');
     font-weight: 350;
     font-style: normal;
@@ -92,34 +92,34 @@ a,a:hover,a:visited{color:#ddd;text-decoration:none;}
 }
 
 @font-face {
-    font-family: 'GLANCESLAB';
+    font-family: 'GlaceSlab';
       src: url('./FONTS/GlanceSlabTest-Medium.otf') format('opentype');
     font-weight: 500;
     font-style: normal;
    font-display: swap;
 }
 @font-face {
-    font-family: 'GLANCESLAB';
+    font-family: 'GlaceSlab';
       src: url('./FONTS/GlanceSlabTest-Light.otf') format('opentype');
     font-weight: 300;
     font-style: normal;
    font-display: swap;
 }
 @font-face {
-    font-family: 'GLANCESLAB';
+    font-family: 'GlaceSlab';
       src: url('./FONTS/GlanceSlabTest-Regular.otf') format('opentype');
     font-weight: 400;
     font-style: normal;
    font-display: swap;
 }
 @font-face {
-    font-family: 'GLANCESLAB';
+    font-family: 'GlaceSlab';
       src: url('./FONTS/GlanceSlabTest-Thin.otf') format('opentype');
     font-weight: 200;
     font-style: normal;
    font-display: swap;
 }
-body{ font-family: GlanceSlab, serif
+body{ font-family: GlaceSlab, serif
     }
 
 .pf1-logo{
@@ -144,6 +144,7 @@ body{ font-family: GlanceSlab, serif
   font-weight:900;
   font-size:48px;
   letter-spacing:1px;
+  text-align: center;
 }
 .section-title{
   font-family:'GlaceSlab', serif;
@@ -161,6 +162,7 @@ body{
   font-weight:350;
   font-size:19px;
   line-height:1.7;
+  text-align: justify;
 }
 .small-note{
   font-family:'GlaceSlab', serif;
