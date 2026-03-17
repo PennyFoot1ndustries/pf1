@@ -1,48 +1,14 @@
-
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="Saison Xiang" content="navBanq">
-    <!-- Style CSS -->
-    <link rel="stylesheet" href="css/style.css">
-     <link href="https://fonts.cdnfonts.com/css/glance-slab-test" rel="stylesheet">
- <script async src="https://www.googletagmanager.com/gtag/js?id=G-69P721FCCG"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-69P721FCCG');
-</script>
-    <script src="//code.jquery.com/jquery-1.10.2.js"></script> 
-<script>  
-$(function(){ 
-  $("#header").load("header.html");  
-  $("#footer").load("footer.html");  
-}); 
-</script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+<head>
+<meta charset="UTF-8">
 <style>
-body { 
-      padding: 22px;
-  background-color: white;
-  color: black;
-  font-size: 22px;
-  font-family: 'Glance Slab Test', sans-serif;
-}                                          
-</style>
-</head>
-  
-<body>
-    <div id="header"></div> 
-  <style>
 body{background:#111;color:white;font-family:sans-serif;text-align:center;margin-top:80px}
 .player{width:320px;margin:auto}
 img{width:100%;border-radius:10px}
 button{margin:6px;padding:8px 14px}
 </style>
+</head>
 
 <body>
 
@@ -65,7 +31,7 @@ let tracks=[]
 let i=0
 const audio=document.getElementById("audio")
 
-fetch("MUSIC/tracks.json")
+fetch("music/tracks.json")
 .then(r=>r.json())
 .then(data=>{
 tracks=data
@@ -88,6 +54,5 @@ function shuffle(){load(Math.floor(Math.random()*tracks.length));audio.play()}
 audio.onended=shuffle
 
 </script>
-<div id="footer"></div>
 </body>
 </html>
