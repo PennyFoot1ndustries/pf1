@@ -69,14 +69,14 @@ a,a:hover,a:visited{color:#ddd;text-decoration:none;}
 }
 
 @font-face {
-  font-family: 'GLANCESLAB-BLACK';
+  font-family: 'GLANCESLAB';
   src: url('./FONTS/GlanceSlabTest-Black.otf') format('opentype');
   font-weight:900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-    font-family: "GLANCESLAB-BOLD";
+    font-family: 'GLANCESLAB';
       src: url('./FONTS/GlanceSlabTest-Bold.otf') format('opentype');
     font-weight: 700;
     font-style: normal;
@@ -84,36 +84,36 @@ a,a:hover,a:visited{color:#ddd;text-decoration:none;}
 }
 
 @font-face {
-    font-family: "GLANCESLAB-BOOK";
+    font-family: 'GLANCESLAB';
       src: url('./FONTS/GlanceSlabTest-Book.otf') format('opentype');
-    font-weight: 600;
+    font-weight: 350;
     font-style: normal;
    font-display: swap;
 }
 
 @font-face {
-    font-family: "GLANCESLAB-MED";
+    font-family: 'GLANCESLAB';
       src: url('./FONTS/GlanceSlabTest-Medium.otf') format('opentype');
     font-weight: 500;
     font-style: normal;
    font-display: swap;
 }
 @font-face {
-    font-family: "GLANCESLAB-LIGHT";
+    font-family: 'GLANCESLAB';
       src: url('./FONTS/GlanceSlabTest-Light.otf') format('opentype');
-    font-weight: 400;
-    font-style: normal;
-   font-display: swap;
-}
-@font-face {
-    font-family: "GLANCESLAB-REG";
-      src: url('./FONTS/GlanceSlabTest-Regular.otf') format('opentype');
     font-weight: 300;
     font-style: normal;
    font-display: swap;
 }
 @font-face {
-    font-family: "GLANCESLAB-THIN";
+    font-family: 'GLANCESLAB';
+      src: url('./FONTS/GlanceSlabTest-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+   font-display: swap;
+}
+@font-face {
+    font-family: 'GLANCESLAB';
       src: url('./FONTS/GlanceSlabTest-Thin.otf') format('opentype');
     font-weight: 200;
     font-style: normal;
@@ -139,3 +139,77 @@ body{ font-family: GlanceSlab, serif
   vertical-align: baseline;
   margin-right: -0.04em;
 }
+.hero-title{
+  font-family:'GlaceSlab',serif;
+  font-weight:900;
+  font-size:48px;
+  letter-spacing:1px;
+}
+.section-title{
+  font-family:'GlaceSlab', serif;
+  font-weight:500;
+  font-size:28px;
+}
+body{
+  font-family:'GlaceSlab', serif;
+  font-weight:400;
+  font-size:18px;
+  line-height:1.6;
+}
+.article-text{
+  font-family:'GlaceSlab', serif;
+  font-weight:350;
+  font-size:19px;
+  line-height:1.7;
+}
+.small-note{
+  font-family:'GlaceSlab', serif;
+  font-weight:300;
+  font-size:14px;
+  opacity:0.8;
+}
+
+body{
+  font-family:"GlaceSlab",serif;
+  font-weight:400;
+  font-size:18px;
+  line-height:1.65;
+  max-width:760px;
+  margin:auto;
+  padding:2rem;
+}
+h1{
+  font-weight:900;
+  font-size:48px;
+  margin-bottom:0.6em;
+}
+
+h2{
+  font-weight:500;
+  font-size:32px;
+  margin-top:2em;
+  margin-bottom:0.5em;
+}
+
+h3{
+  font-weight:500;
+  font-size:24px;
+  margin-top:1.6em;
+  margin-bottom:0.4em;
+}
+p{
+  font-weight:350;
+  margin-bottom:1.2em;
+}
+small{
+  font-weight:300;
+  font-size:14px;
+  opacity:0.75;
+}
+blockquote{
+  font-weight:350;
+  font-size:22px;
+  margin:2em 0;
+  padding-left:1em;
+  border-left:4px solid #ccc;
+} 
