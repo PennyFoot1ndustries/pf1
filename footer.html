@@ -3,26 +3,13 @@
   
 <center>
 <footer>
-    <style>
-         a:link {
-         color: rgb(223, 162, 107);
-         background-color: transparent;
-        }
-            a:visited {
-            color: rgb(223, 162, 107);
-            background-color: transparent;
-           }
-                  a:active {
-                  color: rgb(223, 162, 107);
-                  background-color: transparent;
-                 }
-                      a:hover {
-                      color: lightpink;
-                      background-color: transparent;}
-    </style>
-  <center>
-<span  style="font-size: 1.03em;">
-
+  <script>
+  fetch("footer.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("footer").innerHTML = data;
+  });
+  </script>
  <br>
   <a href="academy.html">•ACADEMY•</a>
   <br>
