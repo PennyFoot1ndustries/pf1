@@ -69,14 +69,14 @@ a,a:hover,a:visited{color:#ddd;text-decoration:none;}
 }
 
 @font-face {
-  font-family: 'GlaceSlab';
+  font-family: 'Glance Slab Test', serif;
   src: url('./FONTS/GlanceSlabTest-Black.otf') format('opentype');
   font-weight:900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-    font-family: 'GlaceSlab';
+    font-family: 'Glance Slab Test', serif;
       src: url('./FONTS/GlanceSlabTest-Bold.otf') format('opentype');
     font-weight: 700;
     font-style: normal;
@@ -84,7 +84,7 @@ a,a:hover,a:visited{color:#ddd;text-decoration:none;}
 }
 
 @font-face {
-    font-family: 'GlaceSlab';
+    font-family: 'Glance Slab Test', serif;
       src: url('./FONTS/GlanceSlabTest-Book.otf') format('opentype');
     font-weight: 350;
     font-style: normal;
@@ -92,38 +92,38 @@ a,a:hover,a:visited{color:#ddd;text-decoration:none;}
 }
 
 @font-face {
-    font-family: 'GlaceSlab';
+    font-family: 'Glance Slab Test', serif;
       src: url('./FONTS/GlanceSlabTest-Medium.otf') format('opentype');
     font-weight: 500;
     font-style: normal;
    font-display: swap;
 }
 @font-face {
-    font-family: 'GlaceSlab';
+    font-family: 'Glance Slab Test', serif;
       src: url('./FONTS/GlanceSlabTest-Light.otf') format('opentype');
     font-weight: 300;
     font-style: normal;
    font-display: swap;
 }
 @font-face {
-    font-family: 'GlaceSlab';
+    font-family: 'Glance Slab Test', serif;
       src: url('./FONTS/GlanceSlabTest-Regular.otf') format('opentype');
     font-weight: 400;
     font-style: normal;
    font-display: swap;
 }
 @font-face {
-    font-family: 'GlaceSlab';
+    font-family: 'Glance Slab Test', serif;
       src: url('./FONTS/GlanceSlabTest-Thin.otf') format('opentype');
     font-weight: 200;
     font-style: normal;
    font-display: swap;
 }
-body{ font-family: GlaceSlab, serif
+body{ font-family: 'Glance Slab Test', serif;
     }
 
 .pf1-logo{
-  font-family: "Glance Slab Test", serif;
+  font-family: 'Glance Slab Test', serif;
   font-weight: 800;
   letter-spacing: 0.02em;
 }
