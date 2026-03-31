@@ -119,8 +119,6 @@ a,a:hover,a:visited{color:#ddd;text-decoration:none;}
     font-style: normal;
    font-display: swap;
 }
-body{ font-family: 'Glance Slab Test';
-    }
 
 .pf1-logo{
   font-family: 'Glance Slab Test';
@@ -151,12 +149,7 @@ body{ font-family: 'Glance Slab Test';
   font-weight:500;
   font-size:28px;
 }
-body{
-  font-family:'Glance Slab Test';
-  font-weight:400;
-  font-size:18px;
-  line-height:1.6;
-}
+
 .article-text{
   font-family:'Glance Slab Test';
   font-weight:350;
