@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+    <script>
+fetch("header.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("header").innerHTML = data;
+  });
+</script>
   <link rel="stylesheet" href="css/yak.css";
 <head>
   <p style="small-note">
