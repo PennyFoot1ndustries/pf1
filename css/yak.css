@@ -69,14 +69,14 @@ a,a:hover,a:visited{color:#ddd;text-decoration:none;}
 }
 
 @font-face {
-  font-family: 'Glance Slab Test', serif;
+  font-family: 'Glance Slab Test';
   src: url('./FONTS/GlanceSlabTest-Black.otf') format('opentype');
   font-weight:900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-    font-family: 'Glance Slab Test', serif;
+    font-family: 'Glance Slab Test';
       src: url('./FONTS/GlanceSlabTest-Bold.otf') format('opentype');
     font-weight: 700;
     font-style: normal;
@@ -84,7 +84,7 @@ a,a:hover,a:visited{color:#ddd;text-decoration:none;}
 }
 
 @font-face {
-    font-family: 'Glance Slab Test', serif;
+    font-family: 'Glance Slab Test';
       src: url('./FONTS/GlanceSlabTest-Book.otf') format('opentype');
     font-weight: 350;
     font-style: normal;
@@ -92,38 +92,38 @@ a,a:hover,a:visited{color:#ddd;text-decoration:none;}
 }
 
 @font-face {
-    font-family: 'Glance Slab Test', serif;
+    font-family: 'Glance Slab Test';
       src: url('./FONTS/GlanceSlabTest-Medium.otf') format('opentype');
     font-weight: 500;
     font-style: normal;
    font-display: swap;
 }
 @font-face {
-    font-family: 'Glance Slab Test', serif;
+    font-family: 'Glance Slab Test';
       src: url('./FONTS/GlanceSlabTest-Light.otf') format('opentype');
     font-weight: 300;
     font-style: normal;
    font-display: swap;
 }
 @font-face {
-    font-family: 'Glance Slab Test', serif;
+    font-family: 'Glance Slab Test';
       src: url('./FONTS/GlanceSlabTest-Regular.otf') format('opentype');
     font-weight: 400;
     font-style: normal;
    font-display: swap;
 }
 @font-face {
-    font-family: 'Glance Slab Test', serif;
+    font-family: 'Glance Slab Test';
       src: url('./FONTS/GlanceSlabTest-Thin.otf') format('opentype');
     font-weight: 200;
     font-style: normal;
    font-display: swap;
 }
-body{ font-family: 'Glance Slab Test', serif;
+body{ font-family: 'Glance Slab Test';
     }
 
 .pf1-logo{
-  font-family: 'Glance Slab Test', serif;
+  font-family: 'Glance Slab Test';
   font-weight: 800;
   letter-spacing: 0.02em;
 }
@@ -140,39 +140,39 @@ body{ font-family: 'Glance Slab Test', serif;
   margin-right: -0.04em;
 }
 .hero-title{
-  font-family:'Glance Slab Test',serif;
+  font-family:'Glance Slab Test';
   font-weight:900;
   font-size:48px;
   letter-spacing:1px;
   text-align: center;
 }
 .section-title{
-  font-family:'Glance Slab Test', serif;
+  font-family:'Glance Slab Test';
   font-weight:500;
   font-size:28px;
 }
 body{
-  font-family:'Glance Slab Test', serif;
+  font-family:'Glance Slab Test';
   font-weight:400;
   font-size:18px;
   line-height:1.6;
 }
 .article-text{
-  font-family:'Glance Slab Test', serif;
+  font-family:'Glance Slab Test';
   font-weight:350;
   font-size:19px;
   line-height:1.7;
   text-align: justify;
 }
 .small-note{
-  font-family:'Glance Slab Test', serif;
+  font-family:'Glance Slab Test';
   font-weight:300;
   font-size:14px;
   opacity:0.8;
 }
 
 body{
-  font-family:'Glance Slab Test',serif;
+  font-family:'Glance Slab Test';
   font-weight:400;
   font-size:18px;
   line-height:1.65;
@@ -181,14 +181,14 @@ body{
   padding:2rem;
 }
 h1{
-  font-family:'Glance Slab Test',serif;
+  font-family:'Glance Slab Test';
   font-weight:900;
   font-size:48px;
   margin-bottom:0.6em;
 }
 
 h2{
-  font-family:'Glance Slab Test',serif;
+  font-family:'Glance Slab Test';
   font-weight:500;
   font-size:32px;
   margin-top:2em;
@@ -196,25 +196,25 @@ h2{
 }
 
 h3{
-  font-family:'Glance Slab Test',serif;
+  font-family:'Glance Slab Test';
   font-weight:500;
   font-size:24px;
   margin-top:1.6em;
   margin-bottom:0.4em;
 }
 p{
-  font-family:'Glance Slab Test',serif;
+  font-family:'Glance Slab Test';
   font-weight:350;
   margin-bottom:1.2em;
 }
 small{
-  font-family:'Glance Slab Test',serif;
+  font-family:'Glance Slab Test';
   font-weight:300;
   font-size:14px;
   opacity:0.75;
 }
 blockquote{
-  font-family:'Glance Slab Test',serif;
+  font-family:'Glance Slab Test';
   font-weight:350;
   font-size:22px;
   margin:2em 0;
@@ -224,9 +224,8 @@ blockquote{
 
 
   .headerfooter{
-    font-family: 'Glance Slab Test', serif;
-   src: url('./FONTS/GlanceSlabTest-Black.otf') format('opentype');
+    font-family: 'Glance Slab Test';
     font-weight: 800;
     font-size: 15px;
-    font-color: #480bff;
+    color: #480bff;
 }
