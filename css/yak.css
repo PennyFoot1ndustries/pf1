@@ -221,3 +221,11 @@ blockquote{
   padding-left:1em;
   border-left:4px solid #ccc;
 } 
+
+
+  headerfooter{
+    font-family: 'Glance Slab Test', serif;
+    font-weight: 800;
+    font-size: 15px;
+    font-color: #480gbf;
+}
