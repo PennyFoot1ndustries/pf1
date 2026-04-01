@@ -220,10 +220,10 @@ blockquote{
     font-family: 'Glance Slab Test';
     font-weight: 800;
     font-size: 28px;
-    color: #7868EF;
+    
 }
 
 .dark-section{
-  background-color: #000000
-  color: #FFFFFF
+  background-color: #000000;
+  color: #FFFFFF;
 }
