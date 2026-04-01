@@ -222,3 +222,8 @@ blockquote{
     font-size: 21px;
     color: #7868EF;
 }
+
+.dark-section{
+  background-color:#111
+    color:#eee
+}
